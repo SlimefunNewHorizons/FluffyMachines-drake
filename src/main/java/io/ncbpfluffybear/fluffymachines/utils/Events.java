@@ -125,7 +125,7 @@ public class Events implements Listener {
             Block b = p.getLocation().subtract(0, 1, 0).getBlock();
 
             if (BlockStorage.hasBlockInfo(b) && BlockStorage.check(b) == FluffyItems.WARP_PAD.getItem()
-                    && BlockStorage.getLocationInfo(b.getLocation(), "type").equals("origin")) {
+                    && "origin".equals(BlockStorage.getLocationInfo(b.getLocation(), "type"))) {
 
                 Location l = b.getLocation();
                 Location destination = new Location(b.getWorld(),
