@@ -12,7 +12,7 @@ jobs:
   publish:
     uses: SlimefunNewHorizons/.github/.github/workflows/publish-blob.yml@main
     with:
-      project: FluffyMachines
+      project: FluffyMachines-Drake
       java-version: '25'
       blob: ${{ github.event_name != 'workflow_dispatch' }}
     secrets: inherit
